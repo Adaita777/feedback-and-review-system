@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback and Review System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Feedback and Review System</h1>
+
+    <!-- Feedback Form -->
+    <section id="feedback-form">
+        <h2>Submit Your Feedback</h2>
+        <form id="feedback">
+            <label for="rating">Rating (1-5):</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required>
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+
+    <!-- Average Rating and Reviews -->
+    <section id="reviews">
+        <h2>Average Rating: <span id="average-rating">0</span></h2>
+        <div id="review-list"></div>
+    </section>
+
+    <!-- Admin Panel -->
+    <section id="admin-panel">
+        <h2>Admin Panel</h2>
+        <div id="admin-reviews"></div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
